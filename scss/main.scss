@@ -1,0 +1,41 @@
+$background-color: hsl(160, 100%, 97%);
+
+body {
+    background-color: $background-color;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+
+
+    button {
+        appearance: none;
+        -webkit-appearance: none;
+        outline: none;
+        border: none;
+
+        background: teal;
+        font-size: 25px;
+        padding: 10px;
+        border-radius: 7px;
+        color: whitesmoke;
+        cursor: pointer;
+    }
+
+    .activities {
+        table {
+            border-collapse: collapse;
+
+            &, td, tr {
+                border: 1px solid teal;
+                padding: 10px;
+            }
+
+            td#type {
+                text-transform: capitalize;
+            }
+
+            thead {
+                font-weight: 700;
+            }
+        }
+    }
+}
